@@ -28,7 +28,7 @@
  	<Resource name="jdbc/PhotoSharingDB2" auth="Container"  factory="org.apache.tomcat.jdbc.pool.DataSourceFactory" 
  		type="javax.sql.DataSource" maxTotal="4" maxIdle="30" maxWaitMillis="10000" 
  		username="trainee07_sankha" password="root1234" driverClassName="com.mysql.jdbc.Driver" testOnBorrow="true" validationQuery="SELECT 1"  
- 		url="jdbc:mysql://aws-photosharing.coktqbhhefew.us-east-2.rds.amazonaws.com:3306/aws_photosharing_db" /> 
+ 		url="jdbc:mysql://photosharingdb2.coktqbhhefew.us-east-2.rds.amazonaws.com:3306/PhotoSharingDB2" /> 
 
 <!-- Online memcached for testing. Only available from EB --> 
  	<Manager className="de.javakaffee.web.msm.MemcachedBackupSessionManager" sessionBackupAsync="false" sticky="false" 
