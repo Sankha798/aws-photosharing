@@ -35,7 +35,7 @@ public enum Configuration {
 	/*
 	 * Ref. http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/Endpoints.html
 	 */	
-	ELASTICACHE_CONFIG_ENDPOINT("<YOUR ELASTICACHE CONFIG ENDPOINT>"); 
+	ELASTICACHE_CONFIG_ENDPOINT("photosharing.zslknl.cfg.use2.cache.amazonaws.com:11211"); 
 	
 	
 	private final String value;
