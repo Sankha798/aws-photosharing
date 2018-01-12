@@ -27,8 +27,8 @@
 <!-- 	Online RDS for testing -->
  	<Resource name="jdbc/PhotoSharingDB2" auth="Container"  factory="org.apache.tomcat.jdbc.pool.DataSourceFactory" 
  		type="javax.sql.DataSource" maxTotal="4" maxIdle="30" maxWaitMillis="10000" 
- 		username="trainee07sankha" password="Ninja798" driverClassName="com.mysql.jdbc.Driver" testOnBorrow="true" validationQuery="SELECT 1"  
- 		url="jdbc:mysql://aaigif79sx6fyf.coktqbhhefew.us-east-2.rds.amazonaws.com:3306/ebdb" /> 
+ 		username="trainee07sankha" password="root1234" driverClassName="com.mysql.jdbc.Driver" testOnBorrow="true" validationQuery="SELECT 1"  
+ 		url="jdbc:mysql://trainee07.coktqbhhefew.us-east-2.rds.amazonaws.com:3306/ebdb" /> 
 
 <!-- Online memcached for testing. Only available from EB --> 
  	<Manager className="de.javakaffee.web.msm.MemcachedBackupSessionManager" sessionBackupAsync="false" sticky="false" 
@@ -40,14 +40,14 @@
 
 	<Resource name="jdbc/PhotoSharingDB2" auth="Container"  factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
 		type="javax.sql.DataSource" maxTotal="4" maxIdle="2" maxWaitMillis="10000" removeAbandoned="true" removeAbandonedTimeout="10" logAbandoned="true"
-		username="trainee07sankha" password="Ninja798" driverClassName="com.mysql.jdbc.Driver"
-		url="jdbc:mysql://aaigif79sx6fyf.coktqbhhefew.us-east-2.rds.amazonaws.com:3306/ebdb" />
+		username="trainee07sankha" password="root1234" driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://trainee07.coktqbhhefew.us-east-2.rds.amazonaws.com:3306/ebdb" />
 
 	<Realm className="org.apache.catalina.realm.LockOutRealm">
 
 		<Realm className="org.apache.catalina.realm.JDBCRealm"
-			driverName="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://aaigif79sx6fyf.coktqbhhefew.us-east-2.rds.amazonaws.com:3306/ebdb"
-			connectionName="trainee07sankha" connectionPassword="Ninja798"
+			driverName="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://trainee07.coktqbhhefew.us-east-2.rds.amazonaws.com:3306/ebdb"
+			connectionName="trainee07sankha" connectionPassword="root1234"
 			userTable="user" userNameCol="user_id" userCredCol="password"
 			userRoleTable="role_mappings" roleNameCol="role" />
 	</Realm>
